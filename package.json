@@ -15,12 +15,14 @@
     "typescript":"5.4.2",
     "@types/node":"20.11.28",
     "ws":"8.16.0",
-    "@types/ws":"8.5.10"
+    "@types/ws":"8.5.10",
+    "chokidar":"3.6.0"
   },
   "exports":{
     ".":{
-      "types":"./dist/types/index.d.ts",
-      "import":"./dist/index.js"
+      "import":"./dist/src/index.js",
+      "require":"./dist/src/index.js",
+      "types":"./dist/types/src/index.d.ts"
     }
   }
 }

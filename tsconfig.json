@@ -1,7 +1,7 @@
 {
   "compilerOptions":{
     "target":"ES5",
-    "module": "ES6",
+    "module": "commonjs",
     "rootDir": ".",
     "outDir": "dist",
     "esModuleInterop": true,
@@ -10,5 +10,8 @@
     "skipLibCheck": true,
     "declaration": true,
     "declarationDir": "dist/types",
+    "paths": {
+      "chokidar":["./node_modules/chokidar/types/index.d.ts"]
+    }
   }
 }
