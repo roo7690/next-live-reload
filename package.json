@@ -1,0 +1,26 @@
+{
+  "name":"@roo7690/next-live-reload",
+  "version":"0.1.0",
+  "description":"Next.js live reload",
+  "keywords": [],
+  "author": {
+    "name": "roo7690",
+    "email": "roosevelt@roo7690.me"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build":"sh ./node_modules/.bin/tsc"
+  },
+  "devDependencies":{
+    "typescript":"5.4.2",
+    "@types/node":"20.11.28",
+    "ws":"8.16.0",
+    "@types/ws":"8.5.10"
+  },
+  "exports":{
+    ".":{
+      "types":"./dist/types/index.d.ts",
+      "import":"./dist/index.js"
+    }
+  }
+}
